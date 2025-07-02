@@ -1,0 +1,65 @@
+.ia_alergija {
+  background-color: var(--color-error-180);
+  width: 100%;
+  height: 99.25%;
+  /* margin-top: 0.25%; */
+  color: var(--color-primary-600);
+  border-radius: var(--border-radius-small);
+  height: 100%;
+}
+
+.ia_alergija_grupa {
+  display: flex;
+  flex-direction: column;
+}
+
+.ia_alergija_podgrupe {
+  display: flex;
+  flex-direction: row;
+}
+
+.alergija_header {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.alergija_header div {
+  width: 100px;
+}
+
+.ia_alergija,
+.a_podgrupa {
+  border-radius: var(--border-radius-small);
+}
+
+.a_podgrupa {
+  border: 1px solid var(--color-error-500);
+  margin-left: 3em;
+  margin-bottom: 2em;
+  padding-top: 0.5em;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.a_podgrupa p {
+  font-weight: 500;
+}
+
+.a_hrana_podgrupa {
+  width: 33%;
+}
+
+.a_hrana_ostalo_podgrupa {
+  width: 12%;
+}
+
+.a_checkbox {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.a_hrana_checkbox {
+  height: 520px;
+}

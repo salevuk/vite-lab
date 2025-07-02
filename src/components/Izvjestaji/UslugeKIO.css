@@ -1,0 +1,79 @@
+.kio_klinika_body {
+  border: 1px solid var(--color-gray-200);
+  border-radius: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.kio_klinika {
+  margin-block: 0.5em;
+  font-weight: 700;
+  padding-left: 4.5em;
+  color: var(--color-primary-475);
+}
+
+.kio_klinika_naziv,
+.kio_odjel_naziv {
+  margin-block: 0.25em;
+  font-weight: 600;
+}
+
+.kio_odjel_naziv {
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.kio_table {
+  display: grid;
+  grid-template-columns: 160px minmax(max-content, 1fr) 200px 200px;
+}
+.kio_row {
+  display: grid;
+  grid-template-columns: 160px minmax(max-content, 1fr) 200px 200px;
+  border-bottom: 1px dashed var(--color-gray-200);
+}
+
+.kio_table {
+  border-bottom: 1px solid var(--color-gray-200);
+  border-top: 1px solid var(--color-gray-200);
+  font-weight: 700;
+}
+
+.kio_row p {
+  margin-block: 0.25em;
+}
+
+.kio_ukupno {
+  font-weight: 700;
+  color: var(--color-error-600);
+  display: grid;
+  grid-template-columns: minmax(max-content, 1fr) 200px 200px;
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.kio_ukupno p {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.kio_ukupno p:first-of-type {
+  text-align: right;
+  padding-right: 1em;
+}
+
+.kio_table div:first-of-type,
+.kio_klinika_naziv,
+.kio_odjel_naziv,
+.kio_row p:first-of-type {
+  padding-inline-start: 0.5em;
+}
+
+.kio_table div:last-of-type,
+.kio_row p:last-of-type,
+.kio_ukupno p:last-of-type {
+  padding-inline-end: 0.5em;
+}
+
+.kio_table div:nth-child(n + 3),
+.kio_ukupno p:nth-child(n + 2),
+.kio_row p:nth-child(n + 3) {
+  text-align: right;
+}

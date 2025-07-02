@@ -1,0 +1,324 @@
+.r_podnaslov {
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding-top: 0.25em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  font-size: 0.85vw; /*0.95em;*/
+  font-weight: 700 !important;
+}
+
+.r_klinicka,
+.r_hgu,
+.r_kou {
+  color: var(--color-primary-900);
+  font-weight: 500;
+  height: inherit;
+}
+
+.r_klinicka {
+  width: 49vw;
+  text-align: center;
+  background-color: var(--color-error-100);
+}
+
+.r_hgu {
+  width: 30vw;
+}
+
+.r_kou {
+  width: 21vw;
+}
+
+.r_hgu,
+.r_kou {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.r_hematologija {
+  background-color: var(--color-error-250);
+  max-height: 13vh;
+}
+
+.r_koagulacije {
+  background-color: var(--color-primary-350);
+  /* height: 32vh; */
+}
+
+.r_osmolaritet {
+  background-color: var(--color-primary-150);
+  height: 14vh;
+}
+
+.r_usluge {
+  background-color: var(--color-primary-250);
+  height: 13vh;
+}
+
+.r_gasne {
+  background-color: var(--color-error-300);
+  max-height: 35vh;
+}
+
+.r_urin {
+  background-color: var(--color-error-190);
+  max-height: 45.5vh;
+}
+
+.r_klin,
+.r_hgu_podgrupa {
+  padding: 0.2em 0.25em;
+}
+
+.r_klinicka h4,
+.r_hgu_podgrupa h4 {
+  width: 100%;
+  text-align: center;
+  font-size: 0.99vw; /*1.05em;*/
+}
+
+.r_klinicka h4 {
+  margin: 0.25em 0 0 0;
+}
+
+.r_hematologija h4,
+.r_gasne h4,
+.r_urin h4,
+.r_koagulacije h4,
+.r_osmolaritet h4,
+.r_usluge h4 {
+  padding: 0.25em 0 0 0;
+  margin: 0;
+}
+
+.r_klin {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 0.25em;
+  height: 100%;
+  /* max-height: 99%; 
+  display: flex;
+  gap: 0.25em;
+  height: 96.5%;
+  width: 100%;
+  flex-flow: column wrap;*/
+}
+
+.r_klin1,
+.r_klin2 {
+  display: flex;
+  gap: 0.25em;
+  /* width: 49.7%; */
+  height: 100%;
+  flex-flow: row wrap;
+  align-content: start;
+}
+
+.r_podgrupa {
+  border: 1px solid var(--color-error-300);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-height: 86%;
+}
+
+/*.r_podgrupa_checkbox {
+  font-size: 0.845vw0.9em;
+}*/
+
+.r_podgrupa_checkbox {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.urin_checkbox > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.urin_checkbox {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+}
+
+.r_hematologija_checkbox {
+  border: 1px solid var(--color-error-100);
+  color: var(--color-primary-20);
+  height: calc(100% - 28px);
+}
+
+.usluge_checkbox,
+.r_hematologija_checkbox {
+  padding-top: 0.5em;
+}
+
+.r_koagulacije_checkbox {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+  flex-flow: column wrap;
+  max-height: 28vh;
+}
+
+.r_serum_checkbox {
+  height: 99vh;
+}
+
+.r_serum_provjera_checkbox {
+  height: 97vh;
+}
+
+.r_gasne_checkbox {
+  height: calc(100% - 41px);
+}
+
+.r_hormoni_checkbox {
+  height: 16vh; /* 140px; */
+}
+
+.r_imun_checkbox,
+.r_spec_checkbox {
+  height: 165px;
+}
+
+.r_tumor_checkbox {
+  /* height: 120px; */
+  max-height: 16vh;
+}
+
+.r_liq .podgrupa_header {
+  margin-bottom: 0.35em;
+}
+
+.r_ip {
+  height: 22vh;
+}
+
+/* .r_hormoni, */
+.r_spec,
+.r_tumor,
+.r_liq {
+  height: 22vh;
+}
+
+.r_provjera_liq,
+.r_provjera_tumor,
+/* .r_provjera_hormoni, */
+.r_provjera_spec {
+  height: 21vh;
+}
+
+.r_liq_checkbox,
+/* .r_hormoni, */
+.prve_podgrupe_razno {
+  display: flex;
+  flex-direction: column;
+}
+
+.liquor_razno {
+  display: grid !important;
+  grid-template-columns: 50% 1fr;
+}
+
+.razno_checkbox_podnaslov {
+  width: 100%;
+  text-align: left;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  margin-left: 0.75em;
+}
+
+.urin_header {
+  align-items: center;
+  margin-right: 0.25em;
+  margin-bottom: 0.5em;
+  column-gap: 0.5em;
+}
+
+/* .urin_header div {
+  width: 25%;
+} */
+
+.komplet_urin {
+  margin: 0.5em;
+  padding: 0.5em 1em;
+  border: 1px solid var(--color-error-500);
+  border-radius: var(--border-radius-small);
+}
+
+.r_urin_checkbox {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 76px);
+  /*font-size:0.845vw 0.9em;*/
+}
+
+.urin_u {
+  height: 160px;
+}
+
+.r_urin24 {
+  padding: 0 0.25em 0.25em 0.25em;
+  height: 285px;
+  gap: 0.25em;
+}
+
+.stolica {
+  height: 80px;
+}
+
+.r_urin_checkbox ul {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+/* .r_urin_checkbox ul > li {
+  font-size: 0.8em;
+} */
+
+.prve_podgrupe_razno,
+.zadnje_podgrupe_razno {
+  margin: 0 0.25em 0.15em 0.25em;
+  gap: 0.15em;
+}
+
+.zadnje_podgrupe_razno {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.razno_checkbox,
+.r_okvir,
+.r_podgrupa_checkbox,
+.r_klinicka,
+.r_hgu_podgrupa,
+.r_podgrupa,
+.r_koagulacije_checkbox > label {
+  border-radius: var(--border-radius-small);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.razno_checkbox {
+  border: 1px solid var(--color-error-300);
+  height: max-content;
+}
+
+.r_okvir,
+.usluge_checkbox {
+  border: 1px solid var(--color-error-500);
+}
+
+.r_okvir {
+  height: calc(100% - 3vh); /* calc(100% - 28px); */
+}
+
+@media only screen and (max-width: 1768px) {
+  .r_serum_checkbox {
+    height: 99vh;
+  }
+}

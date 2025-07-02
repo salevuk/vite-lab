@@ -1,0 +1,17 @@
+.tabela {
+  //border: 2px solid red;
+  //overflow-y: scroll;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .rezultat{
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100dvh - 180px);
+    overflow-y: auto;
+  }
+}

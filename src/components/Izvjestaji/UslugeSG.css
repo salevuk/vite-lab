@@ -1,0 +1,61 @@
+.sgusluge_table,
+.sgusluge_row {
+  display: grid;
+  grid-template-columns: 100px minmax(max-content, 1fr) 100px 100px 100px 100px 100px 100px 100px;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.sgusluge_table {
+  border-top: 1px solid var(--color-gray-200);
+  font-weight: 700;
+  align-items: center;
+}
+
+.sgusluge_table div {
+  align-content: center;
+}
+
+.sgusluge_row p,
+.sgusluge_ukupno p {
+  margin-block: 0.25em;
+}
+
+.sgusluge_table div:first-of-type,
+.sgusluge_row p:first-of-type {
+  padding-inline-start: 0.5em;
+  border-left: 1px solid var(--color-gray-200);
+  height: 100%;
+}
+
+.sgusluge_table div:last-of-type {
+  padding-inline-end: 0.5em;
+}
+
+.sgusluge_table div:nth-child(n + 3) {
+  text-align: center;
+}
+
+.sgusluge_row p:nth-child(n + 3),
+.sgusluge_ukupno p {
+  text-align: right;
+  padding-inline-end: 0.5em;
+}
+
+.sgusluge_table div:nth-child(n + 2),
+.sgusluge_row p:nth-child(n + 2),
+.sgusluge_ukupno p {
+  border-right: 1px solid var(--color-gray-200);
+  height: 100%;
+}
+
+.sgusluge_ukupno {
+  display: grid;
+  grid-template-columns: 1fr 100px 100px 100px 100px 100px 100px 100px;
+  border-bottom: 1px solid var(--color-gray-200);
+  border-left: 1px solid var(--color-gray-200);
+}
+
+.sgusluge_ukupno p:first-child {
+  font-weight: bold;
+  font-size: 1.1em;
+}

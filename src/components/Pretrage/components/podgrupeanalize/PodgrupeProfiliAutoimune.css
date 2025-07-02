@@ -1,0 +1,88 @@
+.ia_profil,
+.ia_autoimune {
+  width: 100%;
+  height: 99.25%;
+  /* margin-top: 0.25%; */
+  color: var(--color-primary-600);
+  height: 100%;
+}
+
+.ia_profil {
+  background-color: var(--color-primary-270);
+}
+
+.ia_autoimune {
+  background-color: var(--color-primary-215);
+  display: flex;
+  flex-direction: column;
+}
+
+.ia_hormoni {
+  background-color: var(--color-primary-150);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 1.5em;
+}
+
+.ia_kostani {
+  background-color: #8aa29e;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.profil_header {
+  padding-top: 0.75em;
+  padding-bottom: 1em;
+}
+
+.profil_header > div > p {
+  margin: 0.5;
+}
+
+.tab_profil {
+  margin-right: 0.5em;
+}
+
+.up1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.up2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.p_podgrupa {
+  border: 1px solid var(--color-error-500);
+  border-radius: var(--border-radius-small);
+  margin-left: 1.5em;
+  margin-bottom: 2em;
+  padding-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.p_podgrupa_zadnja {
+  margin-right: 1.5em;
+}
+
+.p_podgrupa p {
+  font-weight: 500;
+}
+
+.p_checkbox {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.imunoloske_pretrage {
+  width: 60%;
+}
+
+.imunoloske_checkbox {
+  height: 340px;
+}

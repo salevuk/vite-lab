@@ -1,0 +1,82 @@
+.usluga_forma {
+  display: flex;
+  flex-direction: column;
+}
+
+.izmjena_usluge_forma {
+  margin-top: 2.5em;
+}
+
+.dodaj_uslugu {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 3em 0;
+}
+
+.dodaj_uslugu > div,
+.izmjeni_uslugu > div {
+  padding: 0 0.75em;
+}
+
+.izmjeni_uslugu > div {
+  padding-top: 0.75em;
+  padding-bottom: 1em;
+}
+
+.dodaj_uslugu > div > input,
+.izmjeni_uslugu > div > input {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  border: 2px solid rgba(255, 255, 255, 0);
+  outline: var(--color-primary-250) solid 1px;
+  border-radius: var(--border-radius-small);
+  margin-top: 0.25em;
+  color: var(--color-labos-500);
+  font-size: 0.9em;
+  font-family: inherit;
+}
+
+.dodaj_uslugu > div > input::placeholder,
+.izmjeni_uslugu > div > input::placeholder {
+  color: var(--color-labos-400);
+}
+
+.dodaj_uslugu > div > input:hover,
+.izmjeni_uslugu > div > input:hover {
+  outline-color: var(--color-primary-300);
+}
+
+.dodaj_uslugu > div > input:focus,
+.izmjeni_uslugu > div > input:focus {
+  border: 2px solid var(--color-primary-300);
+  outline: 0;
+  /* outline-color: var(--color-primary-300); */
+}
+
+.dodaj_uslugu > div > label,
+.izmjeni_uslugu > div > label {
+  color: var(--color-labos-500);
+}
+
+.greska {
+  color: var(--color-error-500);
+  padding-left: 0.75em;
+  font-size: 0.8em;
+}
+
+.greska_sakrij {
+  padding-left: 0.75em;
+  font-size: 0.8em;
+  visibility: hidden;
+}
+
+.unos > button {
+  font-size: 1em;
+  padding: 0.75em;
+}
+
+#aktivna {
+  outline: none;
+  height: 1.35em;
+  accent-color: var(--color-primary-300);
+}

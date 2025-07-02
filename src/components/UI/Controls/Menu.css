@@ -1,0 +1,194 @@
+.izbor_sifrarnika {
+  border-bottom: 1px solid var(--color-labos-250);
+  display: flex;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+  /* height: 55px; */
+}
+
+.title {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--color-labos-400);
+  margin-inline: auto;
+}
+.title p {
+  margin-block: 12px;
+}
+/* Dropdown Button */
+/* .dropbtn {
+  background-color: #004777;
+  color: var(--color-gray-75);
+  letter-spacing: 2px;
+  padding: 13px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: var(--border-radius-small) 0 var(--border-radius-small) 0;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+} 
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+/*.dropbtn:hover {
+  background-color: #005994;
+  color: var(--color-error-180);
+}*/
+
+.dropdown_lu {
+  position: relative;
+  display: inline-block;
+}
+.dropdown_lu:hover .dropdown_content_lu {
+  display: block;
+}
+.dropdown_content_lu {
+  display: none;
+  position: absolute;
+  background-color: var(--color-gray-75);
+  min-width: 165px;
+  box-shadow: 0px 8px 16px 0px rgba(1, 21, 50, 0.2);
+  z-index: 8;
+}
+/* Links inside the dropdown */
+.izbor_lu {
+  color: var(--color-gray-700);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  position: relative;
+}
+
+.izbor_ds1 {
+  color: var(--color-gray-700);
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.izbor_lu:hover {
+  background-color: var(--color-gray-150);
+  /*   border: 2px solid #7a8062;
+  border-radius: var(--border-radius-small); */
+  color: var(--color-gray-50);
+  cursor: pointer;
+}
+
+.izbor_lu:hover > .dropdown_submenu1 {
+  display: block;
+  top: 0;
+  left: 100%;
+}
+
+/* The container <div> - needed to position the dropdown content */
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.5em;
+} */
+
+/* Dropdown Content (Hidden by Default) */
+/* .dropdown_content, */
+.dropdown_submenu1,
+.dropdown_submenu2 {
+  display: none;
+  position: absolute;
+  background-color: var(--color-gray-75);
+  border-radius: 0 var(--border-radius-small) var(--border-radius-small) 0;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(1, 21, 50, 0.2);
+  z-index: 7;
+}
+
+/* .dropdown_content2 {
+  display: none;
+  position: absolute;
+  background-color: var(--color-gray-75);
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(1, 21, 50, 0.2);
+  z-index: 7;
+} */
+
+/* Links inside the dropdown */
+.izbor_iz {
+  color: var(--color-gray-700);
+  color: initial;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Change color of dropdown links on hover */
+.izbor_iz:hover {
+  background-color: var(--color-gray-150);
+  color: var(--color-gray-50) !important;
+}
+.izbor_iz:hover > .dropdown_submenu2 {
+  display: block;
+  top: 0;
+  left: 100%;
+}
+
+/* Show the dropdown menu on hover */
+/* .dropdown:hover  */
+.dropdown_content,
+/* .dropdown:hover  */.dropdown_content2 {
+  display: block;
+  left: 0;
+  margin-top: -1px;
+}
+
+.dropdown_is:hover /* .dropdown_content_is */ {
+  display: block;
+}
+
+/* .dropdown_content_is, */
+.dropdown_content_iz {
+  display: none;
+  position: absolute;
+  background-color: var(--color-gray-75);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(1, 21, 50, 0.2);
+  z-index: 8;
+}
+
+/* .dropdown_content_is {
+  right: 0;
+} */
+
+/* .dropdown_content_iz {
+  min-width: 260px;
+} */
+/* .dropdown-content_iz:hover .dropdown_submenu {
+  display: block;
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+} */
+/* .izbor_is {
+  color: var(--color-gray-700);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.izbor_is:hover {
+  background-color: var(--color-gray-150);
+  cursor: pointer;
+} */
+
+/* active i active2(sifrarnici i izvjestaji) */
+.active {
+  pointer-events: none;
+  color: var(--color-labos-350);
+  background-color: var(--color-gray-90);
+}
+
+.active2 {
+  color: var(--color-labos-350);
+  background-color: var(--color-gray-90);
+}
+
+.unknown {
+  color: var(--color-error-600);
+  pointer-events: none;
+}

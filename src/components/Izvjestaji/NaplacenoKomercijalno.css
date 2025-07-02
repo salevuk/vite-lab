@@ -1,0 +1,55 @@
+.naplacenokom_korisnik {
+  margin-block: 0.5em;
+  font-weight: 700;
+  padding-left: 4.5em;
+}
+
+.naplacenokom_table,
+.naplacenokom_row {
+  display: grid;
+  grid-template-columns: 140px minmax(max-content, 1fr) 140px 160px 160px;
+}
+
+.naplacenokom_table {
+  border-bottom: 1px solid var(--color-gray-200);
+  border-top: 1px solid var(--color-gray-200);
+  font-weight: 700;
+}
+
+.naplacenokom_row p {
+  margin-block: 0.25em;
+}
+
+.naplacenokom_row {
+  border-bottom: 1px dashed var(--color-gray-200);
+}
+
+.naplacenokom_ukupno {
+  font-weight: 700;
+  color: var(--color-error-600);
+  display: grid;
+  grid-template-columns: minmax(max-content, 1fr) 160px;
+  border-bottom: 1px solid var(--color-gray-200);
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.naplacenokom_ukupno p {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.naplacenokom_ukupno p:first-of-type {
+  text-align: right;
+  padding-right: 1em;
+}
+
+.naplacenokom_table div:nth-child(3),
+.naplacenokom_row p:nth-child(3) {
+  text-align: center;
+}
+
+.naplacenokom_table div:nth-child(n + 4),
+.naplacenokom_ukupno p:nth-child(n + 2),
+.naplacenokom_row p:nth-child(n + 4) {
+  text-align: right;
+}

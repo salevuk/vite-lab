@@ -1,0 +1,73 @@
+.kiozbirno_klinika_body {
+  border: 1px solid var(--color-gray-200);
+  border-radius: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.kiozbirno_klinika {
+  margin-block: 0.5em;
+  font-weight: 700;
+  padding-left: 4.5em;
+  color: var(--color-primary-475);
+}
+
+.kiozbirno_klinika_naziv {
+  margin-block: 0.25em;
+  font-weight: 600;
+}
+
+.kiozbirno_table,
+.kiozbirno_row {
+  display: grid;
+  grid-template-columns: minmax(max-content, 1fr) 160px 160px;
+}
+
+.kiozbirno_table {
+  border-bottom: 1px solid var(--color-gray-200);
+  border-top: 1px solid var(--color-gray-200);
+  font-weight: 700;
+}
+
+.kiozbirno_row p {
+  margin-block: 0.25em;
+}
+
+.kiozbirno_row {
+  border-bottom: 1px dashed var(--color-gray-200);
+}
+
+.kiozbirno_ukupno {
+  font-weight: 700;
+  color: var(--color-error-600);
+  display: grid;
+  grid-template-columns: minmax(max-content, 1fr) 160px 160px;
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.kiozbirno_ukupno p {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.kiozbirno_ukupno p:first-of-type {
+  text-align: right;
+  padding-right: 1em;
+}
+
+.kiozbirno_table div:first-of-type,
+.kiozbirno_klinika_naziv,
+.kiozbirno_row p:first-of-type {
+  padding-inline-start: 0.5em;
+}
+
+.kiozbirno_table div:last-of-type,
+.kiozbirno_row p:last-of-type,
+.kiozbirno_ukupno p:last-of-type {
+  padding-inline-end: 0.5em;
+}
+
+.kiozbirno_table div:nth-child(n + 2),
+.kiozbirno_ukupno p:nth-child(n + 2),
+.kiozbirno_row p:nth-child(n + 2) {
+  text-align: right;
+}

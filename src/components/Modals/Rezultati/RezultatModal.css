@@ -1,0 +1,19 @@
+.rez_modal {
+  min-height: 400px;
+  max-height: 88vh;
+  overflow-y: auto;
+}
+
+.rez_modal h4 {
+  margin: 0.5em 1em 0.25em 1em;
+}
+
+.rez_modal_nema_podataka {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-error-500);
+  height: 100%;
+  width: 100%;
+  margin-top: 10%;
+}

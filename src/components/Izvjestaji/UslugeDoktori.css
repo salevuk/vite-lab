@@ -1,0 +1,125 @@
+.podokt_klinika_body {
+  border: 1px solid var(--color-gray-200);
+  border-radius: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+.podokt_klinika {
+  margin-block: 0.5em;
+  padding-left: 2.5em;
+  font-size: larger;
+}
+
+.podokt_klinika,
+.podokt_klinika_naziv {
+  color: var(--color-primary-475);
+  font-weight: 700;
+}
+
+.podokt_klinika_naziv {
+  margin-block: 0.25em;
+}
+
+.podokt_table,
+.podokt_row {
+  display: grid;
+  grid-template-columns: 100px 1fr 160px 160px;
+}
+
+.podokt_table {
+  border-bottom: 1px solid var(--color-gray-200);
+  border-top: 1px solid var(--color-gray-200);
+  font-weight: 700;
+}
+
+.podokt_row p {
+  margin-block: 0.25em;
+}
+
+.podokt_row {
+  border-bottom: 1px dashed var(--color-gray-200);
+}
+
+.podokt_ukupno,
+.podokt_ukupno_klinika {
+  font-weight: 700;
+  color: var(--color-error-600);
+  display: grid;
+  grid-template-columns: 1fr 160px;
+}
+
+.podokt_ukupno p:first-of-type,
+.podokt_ukupno_klinika p:first-of-type,
+.podokt_row p:nth-child(2) {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.podokt_ukupno {
+  border-top: 1px solid var(--color-gray-200);
+}
+
+.podokt_ukupno_klinika {
+  border: 1px solid var(--color-gray-200);
+  border-radius: 0.25em;
+  font-size: large;
+  margin-bottom: 0.25em;
+}
+
+.podokt_ukupno p,
+.podokt_ukupno_klinika p {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+
+.podokt_ukupno p:first-of-type,
+.podokt_ukupno_klinika p:first-of-type {
+  text-align: right;
+  padding-right: 1em;
+}
+
+.podokt_table div:first-of-type,
+.podokt_klinika_naziv,
+.podokt_row p:first-of-type {
+  padding-inline-start: 0.5em;
+}
+
+.podokt_row p:first-of-type {
+  text-align: center;
+}
+
+.podokt_table div:last-of-type,
+.podokt_row p:last-of-type,
+.podokt_ukupno p:last-of-type,
+.podokt_ukupno_klinika p:last-of-type {
+  padding-inline-end: 0.5em;
+}
+
+.podokt_table div:nth-child(n + 3),
+.podokt_ukupno p:nth-child(n + 2),
+.podokt_ukupno_klinika p:nth-child(n + 2),
+.podokt_row p:nth-child(n + 3) {
+  text-align: right;
+}
+
+@media print {
+  .podokt_klinika_body,
+  .podokt_ukupno_klinika {
+    /* font-size: large; */
+    max-width: 1140px;
+  }
+  .izvjestaj_podheader h2 {
+    font-size: 1.25em;
+  }
+  .podokt_klinika {
+    break-before: always;
+    break-after: avoid;
+  }
+  /*   .podokt_klinika_body {
+    break-inside: avoid;
+  } */
+  .podokt_ukupno_klinika {
+    break-before: avoid;
+    break-after: always;
+  }
+}

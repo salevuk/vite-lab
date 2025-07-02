@@ -1,0 +1,44 @@
+$dark-blue: #34495e;
+$link-color: #1976d2;
+$row-color: #C8E6C9;
+$dark-blue: #34495e;
+$major-color: #B71C1C;
+$moderate-color: #e6944b;
+$minor-color: #83a78d;
+$span-color: #979a9a;
+$white: #fff;
+
+@mixin sidebar_user_version{
+  height: 32px;
+  margin: 16px;
+  background: rgba(255,255,255,.2);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 5px;
+  cursor: pointer;
+  transition: color ease .2s;
+}
+
+[data-theme="dark"] {
+  --text-color: rgba(255, 255, 255, .9);
+  --row-color: #33691E;
+  --prijava-bg-color: #141414;
+  --backdrop-color: linear-gradient(rgba(150, 150, 150, .2), rgba(150, 150, 150, .3));
+  --modal-color: #141414;
+  --kartica-border-color: #fafafa;
+  --h4-kontrolana-tabla: #fafafa;
+}
+
+// Svijetla tema
+[data-theme="light"] {
+  --text-color: rgba(0, 0, 0, 0.9);
+  --row-color: #C8E6C9;
+  --prijava-bg-color: #fff;
+  --backdrop-color: linear-gradient(rgba(30, 30, 30, .2), rgba(30, 30, 30, .3));
+  --modal-color: #fff;
+  --kartica-border-color: #bdbdbd;
+  --h4-kontrolana-tabla: #8c8c8c;
+}

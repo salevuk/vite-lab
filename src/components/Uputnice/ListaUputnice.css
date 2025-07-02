@@ -1,0 +1,144 @@
+.css-155itdh {
+  min-width: 100% !important;
+}
+/* ukoliko se želi date range jedan ispod drugog */
+/* .css-8yqbvs {
+  display: grid !important;
+  gap: 0.25rem !important;
+  grid-template-columns: 0 !important;
+  grid-template-rows: 1fr !important;
+} */
+.css-1azwzt7 {
+  padding: 0 !important;
+}
+.css-mfslm7 {
+  padding: 4px !important;
+}
+.css-mfslm7:hover {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.css-15ni0jc {
+  padding: 4px !important;
+}
+.css-1tpqat2 {
+  min-width: auto !important;
+}
+.css-1rzb3uu {
+  display: none !important;
+}
+.css-1p0wbhh {
+  flex-wrap: nowrap !important;
+  padding: 0.5em 0.5em 0 0 !important;
+}
+
+.css-vs5zsw {
+  margin: 0 !important;
+  padding: 10px 40px !important;
+  border-radius: 0 !important;
+}
+
+.css-vs5zsw:hover {
+  background-color: var(--color-error-100) !important;
+}
+
+/* .css-1ujsas3 {
+  margin: 0 !important;
+  border-radius: var(--border-radius-small) 0 var(--border-radius-small) 0 !important;
+  padding: 6px 16px !important;
+  background-color: #003249 !important;
+  color: var(--color-error-180) !important;
+}
+.css-1ujsas3:hover {
+  background-color: var(--color-labos-400) !important;
+} */
+.css-1tbggly {
+  overflow: visible !important;
+}
+.css-1tbggly {
+  z-index: 3 !important;
+}
+
+.MuiFormControlLabel-label,
+.css-134xm5z,
+.css-17gdyv7,
+.css-17qo1ct,
+.css-1niro10,
+.css-1oy18r0,
+.css-16j77m4,
+.css-10qkmc3,
+.css-o9cot7,
+.css-1k3q1yi,
+.MuiTypography-body1 {
+  font-family: "Inter", sans-serif !important;
+  /* margin-top: 0.25em; */
+}
+
+.css-mr4aol {
+  max-width: 270px !important;
+}
+
+.css-1k3q1yi {
+  font-size: clamp(
+    0.875rem,
+    -0.5789rem + 1.3158vw,
+    1rem
+  ) !important; /*  0.84vw  */
+}
+
+.css-17qo1ct {
+  font-size: 0.975em !important;
+}
+
+.MuiTypography-body1 {
+  font-size: 1.25vw !important;
+  max-width: max(100vw, 1405px) !important;
+}
+
+.MuiFormControlLabel-label {
+  font-size: 0.9vw !important;
+}
+
+.MuiTablePagination-root {
+  padding: 10px 8px !important;
+}
+
+.MuiTableHead-root {
+  border-top: 1px solid rgb(224, 224, 224) !important;
+}
+/* IZJEDNAČAVANJE MENIJA */
+.css-wsew38 {
+  padding: 0 !important;
+  margin-bottom: 0.5em !important;
+}
+.css-a0y2e3 {
+  display: none !important;
+}
+
+.css-mcol20 {
+  padding: 0 !important;
+}
+
+.css-1v512cc {
+  margin-bottom: 0.25em !important;
+}
+
+/* .css-14s3w44 {
+  min-height: clamp(350px, -133px + 100vh, 9999px) !important;
+} */
+
+.calendar_action {
+  display: grid;
+  grid-template-columns: minmax(min-content, max-content) minmax(
+      min-content,
+      max-content
+    );
+  justify-content: end;
+}
+
+.top_toolbar {
+  display: flex;
+}
+
+.top_toolbar > *:nth-child(n + 9) {
+  margin-left: 0.25rem;
+}

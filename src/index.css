@@ -1,0 +1,101 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700&display=swap"); */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"); */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  height: 100vh;
+  width: 100%;
+  border-radius: var(--border-radius-small);
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--border-radius-small);
+}
+
+html {
+  border-radius: var(--border-radius-small);
+  background-color: var(--color-primary-200);
+  --color-labos-100: #d9d9d9;
+  --color-labos-150: #737373;
+  --color-labos-250: #44bba4;
+  --color-labos-300: #84bcda;
+  --color-labos-350: #067bc2;
+  --color-labos-400: #0e5959;
+  --color-labos-450: #073b3a;
+  --color-labos-500: #104040;
+  --color-labos-550: #003249; /*nova boja - blueish-green*/
+
+  --color-gray-50: #eff0eb; /*nova boja - beige-lighter*/
+  --color-gray-75: #d8dace;
+  --color-gray-90: #bfc2af;
+  --color-gray-100: #d0d1cd; /*nova boja - beige-light*/
+  --color-mint-green: #e6efe9;
+  --color-gray-150: #a7a98e;
+  --color-gray-175: #7a8062;
+  --color-gray-200: #464f6d; /*nova boja - SpaceGray shade light*/
+  --color-gray-700: #1f2531; /*nova boja - SpaceGray*/
+
+  --color-primary-20: #eff6ee; /*nova boja - greenish-white*/
+  --color-primary-50: #fffaff; /*nova boja- ghost white-crvenkasta bijela*/
+  --color-primary-100: #fdfcdc; /*nova boja - material tender-amber 50*/
+  --color-primary-150: #deb986;
+  --color-primary-200: #fdfdfd; /*nova boja - new white*/
+  --color-primary-210: #ccf5a3;
+  --color-primary-215: #e1e5f2; /*#CEBBC9*/
+  --color-primary-220: #adc178;
+  --color-primary-250: #84dcc6;
+  --color-primary-270: #c5e6a6; /* zamjena  #C5EDAC */
+  --color-primary-300: #6b7fd7; /*plava za checkbox #134074*/
+  --color-primary-325: #94a8e5;
+  --color-primary-350: #ccc0f2;
+  --color-primary-475: #0077b6;
+  --color-primary-500: #3e92cc; /* nova boja - celestial-blue*/
+  --color-primary-600: #004777; /*nova boja - beautiful dark-blue*/
+  --color-primary-900: #011532; /*nova boja - deep dark-blue*/
+  --color-primary-920: #8920ab;
+  --color-primary-950: #261447;
+
+  --color-error-100: rgb(248, 187, 208); /*nova boja - material pink-light 100*/
+  --color-error-150: #ffafc5; /*cherry blosssom*/
+  --color-error-170: #fffc99;
+  --color-error-180: #f9e18e;
+  --color-error-190: #f4e04d;
+  --color-error-200: #ff0054;
+  --color-error-210: #f40000;
+  --color-error-250: #ff5b75;
+  --color-error-270: #ff4d6d;
+  --color-error-300: #fa7c91; /*nova boja - pink-bulma*/
+  --color-error-350: #da627d; /* Blush */
+  --color-error-400: #e94a6a;
+  --color-error-500: #d8315b; /* nova boja - cerise*/
+  --color-error-600: #9a031e; /*Carmine*/
+
+  --space-1: 0.1rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+
+  --border-radius-small: 5px;
+  --border-radius-medium: 0.5rem;
+  --border-radius-big: 1rem;
+
+  --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.2);
+  --shadow-big: 5px 5px 8px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,62 @@
+.ovjera {
+  padding: 3em 2em;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75em;
+}
+
+.ovjera_header {
+  display: flex;
+  flex-direction: column;
+}
+
+.ovjera_podheader {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.ovjera_podheader div {
+  width: 30%;
+}
+
+.ovjera_crta {
+  border-bottom: 1px solid var(--color-gray-700);
+}
+
+.ovjera_header p,
+.ovjera_pacijent {
+  margin-block: 0.1em;
+}
+
+.ovjera_pretraga {
+  display: grid;
+  grid-template-columns: 80px 130px 1fr;
+  margin-right: 0.5em;
+}
+
+.ovjera_pretraga p {
+  margin-block: 0.1em;
+}
+
+.ovjera_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: 560px;
+}
+
+@media print and (orientation: portrait) {
+  .ovjera_wrap {
+    height: 600px !important;
+  }
+}
+
+@media print and (orientation: landscape) {
+  .ovjera_wrap {
+    height: 500px !important;
+  }
+}

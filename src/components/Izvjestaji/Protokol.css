@@ -1,0 +1,106 @@
+.protokol_table,
+.protokol_row {
+  display: grid;
+  grid-template-columns: 90px 100px 110px 110px minmax(max-content, 1fr) 180px 120px 110px 100px 80px;
+  font-size: 1.1em;
+}
+
+.protokol_table {
+  border-bottom: 1px solid var(--color-gray-200);
+  border-top: 1px solid var(--color-gray-200);
+  font-weight: 700;
+  align-items: center;
+}
+
+.protokol_table div {
+  text-align: center;
+}
+
+.protokol_row p,
+.protokol_ukupno p {
+  margin-block: 0.25em;
+}
+
+.protokol_row {
+  border-bottom: 1px dashed var(--color-gray-200);
+}
+
+.protokol_table div:first-of-type,
+.protokol_row p:first-of-type,
+.protokol_row p:nth-child(5) {
+  padding-inline-start: 0.5em;
+}
+
+.protokol_row p:nth-child(-n + 2) {
+  text-align: center;
+}
+
+/* p:nth-child(n+2):nth-child(-n+6) */
+
+.protokol_table div:last-of-type {
+  padding-inline-end: 0.5em;
+}
+
+.protokol_row p:nth-child(n + 3):nth-child(-n + 4),
+.protokol_row p:nth-child(n + 6),
+.protokol_ukupno p {
+  text-align: right;
+  padding-inline-end: 0.5em;
+}
+
+.protokol_row p:last-child {
+  text-align: center;
+}
+
+.protokol_table div:nth-child(-n + 9),
+.protokol_row p:nth-child(-n + 9),
+.protokol_ukupno p:nth-child(-n + 4) {
+  border-right: 1px solid var(--color-gray-200);
+  height: 100%;
+}
+
+.numbers {
+  font-family: "Inter", sans-serif;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+.protokol_ukupno {
+  display: grid;
+  grid-template-columns: 1fr 120px 110px 100px 80px;
+  border-top: 1px solid var(--color-gray-200);
+  border-bottom: 1px solid var(--color-gray-200);
+  margin-top: 0.25em;
+  font-size: 1.1em;
+}
+
+.protokol_ukupno p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.prikaz,
+.protokol_strana,
+.zadnji_br_strane {
+  display: none;
+}
+
+@media print {
+  .izvjestaj {
+    zoom: 84% !important;
+  }
+  .prikaz {
+    display: grid;
+    margin-top: 0.5em;
+  }
+
+  .protokol_strana {
+    display: flex;
+    justify-content: end;
+    font-size: 0.9em;
+  }
+
+  .pagebreak {
+    page-break-before: always;
+  }
+}

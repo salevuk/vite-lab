@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.custom_row {
+  background-color: #c8e6c9;
+}
+
+.ant-tabs-tab-active {
+  border: 1px solid #067bc2 !important;
+  border-bottom-color: #fff !important;
+}
+
+.ant-tabs-ink-bar {
+  background-color: #067bc2 !important; /* Ensures the underline color */
+}

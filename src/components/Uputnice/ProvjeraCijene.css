@@ -1,0 +1,20 @@
+.provjera_cijene {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 0.8fr 1fr;
+  padding-inline: 0.75rem;
+  margin-top: 0.75rem;
+}
+.cijene {
+  margin-bottom: 1rem !important;
+}
+.cijene > p:first-child {
+  font-size: 1.1rem !important;
+}
+.objava {
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  padding-inline: 0.75rem;
+  text-align: center;
+  color: var(--color-labos-550);
+}

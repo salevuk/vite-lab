@@ -1,0 +1,80 @@
+.css-qwdxx6 {
+  padding: 8.5px 0px 8.5px 14px !important;
+  /*font-size: clamp(
+    0.875rem,
+    -0.5789rem + 1.3158vw,
+    1rem
+  ) !important;  0.84vw */
+}
+
+.css-1ap6el4 {
+  margin: 4px 4px 4px 18px !important;
+}
+/* .css-ohyacs {
+  padding: 16px 24px 0.25em 24px !important;
+} kontroliše DialogTitle*/
+/* .css-1w86f15 {
+  justify-content: center !important;
+} */
+
+.css-15qrapg,
+.css-qj9vk4 {
+  padding-left: 0 !important;
+}
+
+/*.css-1r09u4m {
+  overflow-y: hidden !important; 
+  padding: 0.25em !important;
+}*/
+.css-19ohix0 {
+  border-radius: 4px !important;
+}
+.css-1vu93id {
+  padding: 0 1em !important;
+}
+
+.css-1hw9j7s,
+.css-149sczi,
+.css-1xasbvm {
+  font-family: "Inter", sans-serif !important;
+}
+
+.donji_dio {
+  /* min-height: 165px;
+  max-height: 50vh; */
+  height: 45%; /* 395px; */
+  border: 1px solid rgb(170, 170, 170);
+  overflow-y: scroll;
+  border-radius: 4px;
+}
+
+.donji_dio h4 {
+  margin: 0.5em 1em 0.25em 1em;
+}
+
+.donji_dio p {
+  margin: 0.25em 1em 0.25em 1em;
+}
+
+.donji_dio p {
+  font-size: 0.8em;
+}
+
+.donji_dio table {
+  width: 35%;
+  font-size: 0.9em;
+  margin-left: 1em;
+}
+
+.donji_dio th {
+  border-bottom: 1px solid rgb(170, 170, 170);
+  background-color: white;
+  position: sticky;
+  top: 0;
+}
+
+.donji_dio th,
+td {
+  padding: 0;
+  text-align: left;
+}

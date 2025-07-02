@@ -1,0 +1,103 @@
+.uplatnica {
+  width: 643px;
+  height: 378px;
+  padding-top: 0.5em;
+}
+.uplatnica_header {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.uplatnica_header > div {
+  width: 50%;
+}
+.uplatnica_header > div:first-child,
+.uplatnica_header > div:nth-child(3) {
+  padding-left: 30%;
+}
+.uplatnica_header > div:first-child > p,
+.uplatnica_header > div:nth-child(2) > p {
+  margin-bottom: 0.5em;
+}
+.uplatnica_header > div:last-child,
+.uplatnica_header > div:nth-child(2) {
+  padding-left: 22%;
+}
+.uplatnica_header > div:last-child > p,
+.uplatnica_header > div:nth-child(3) > p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.uplatnica_footer {
+  display: grid;
+  grid-template-columns: 1fr 15%;
+}
+.uplatnica_pacijent {
+  text-align: center;
+  margin: 0 0 0.85em 0;
+}
+.uplatnica_strana {
+  margin: 0 0 0.85em 0;
+}
+.uplatnica_pretraga {
+  padding-left: 3em;
+  padding-right: 0.25em;
+  width: 63%;
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 0.9em;
+}
+.uplatnica_pretraga > p {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.uplatnica_pretraga > p:first-of-type {
+  width: 22%;
+}
+.uplatnica_pretraga > p:nth-last-of-type(3) {
+  text-align: left;
+  padding-left: 0.25em;
+  width: 57%;
+}
+.uplatnica_pretraga > p:nth-last-of-type(2) {
+  text-align: center;
+  width: 5%;
+}
+.uplatnica_pretraga > p:last-of-type {
+  text-align: right;
+  width: 16%;
+}
+.uplatnica_crta {
+  margin-left: 52%;
+  width: 12%;
+  border-bottom: 1px solid var(--color-gray-700);
+}
+.uplatnica_cijena {
+  margin: 0;
+  /* padding: 0 0 0 55%; */
+  width: 62.4%;
+  text-align: right;
+  font-size: 0.9em;
+}
+
+@media print {
+  .uplatnica {
+    overflow: visible;
+    padding-top: 3.3rem;
+  }
+  .pagebreak {
+    page-break-before: always;
+  }
+  .preskok {
+    margin-bottom: 4rem;
+    /* margin-bottom: 11em; */
+  }
+  .uplatnica_pacijent {
+    margin: 0.5rem 0 1.75rem 0;
+  }
+  .uplatnica_pretraga {
+    padding-left: 4rem;
+  }
+}

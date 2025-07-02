@@ -1,0 +1,93 @@
+.izvjestaj {
+  display: grid;
+  grid-template-rows: 83px 51px 1fr;
+  height: 100%;
+}
+.izvjestaj_header,
+.izvjestaj_podheader {
+  position: sticky;
+  background-color: white;
+}
+
+.protokol_header,
+.protokol_podheader {
+  position: sticky;
+  background-color: white;
+  top: -95px !important;
+}
+
+.izvjestaj_header {
+  display: flex;
+  height: 83px;
+  align-items: center;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  top: 51px;
+}
+
+.izvjestaj_podheader {
+  top: 134px;
+  padding-bottom: 0.5em;
+}
+
+.izvjestaj_header h3,
+.izvjestaj_podheader,
+.protokol_header h3,
+.protokol_podheader {
+  text-align: center;
+  width: 100%;
+  margin-block: 0;
+}
+
+.izvjestaj_header h3,
+.protokol_header h3 {
+  color: var(--color-labos-150);
+}
+
+.izvjestaj_podheader h2 {
+  margin: 0;
+  color: var(--color-labos-550);
+}
+
+.izvjestaj_body {
+  height: 92%;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.uzi_body {
+  width: 35%;
+}
+
+.last-row {
+  border-bottom: none;
+}
+
+@media print {
+  .izvjestaj {
+    zoom: 77%;
+  }
+
+  .izvjestaj_body {
+    overflow: visible;
+    margin-top: 4.1em;
+    /*font-size: 0.875em;*/
+  }
+
+  .uzi_body {
+    width: 100%;
+  }
+
+  @page {
+    margin: 0.9em 0.5em 0.7em 0.5em;
+  }
+  /* .izvjestaj_podheader h2 {
+    font-size: 1em;
+  }
+
+  .izvjestaj_header h3 {
+    font-size: 0.8em;
+  } */
+}
